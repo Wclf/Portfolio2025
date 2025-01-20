@@ -1270,24 +1270,31 @@ footer .credits a {
   }
 }
 
+.socials {
+  text-align: center; /* Căn giữa toàn bộ danh sách */
+  overflow: hidden; /* Đảm bảo nội dung không tràn ra ngoài */
+}
+
 .socials ul {
   list-style: none;
   padding: 0;
-  margin: 0;
-  display: flex; /* Sử dụng flexbox để sắp xếp theo hàng ngang */
-  align-items: center; /* Canh giữa theo chiều dọc */
+  margin: 0 auto; /* Căn giữa danh sách */
+  display: inline-flex; /* Dùng inline-flex để tránh tràn */
+  align-items: center;
+  flex-wrap: wrap; /* Đảm bảo các mục xuống hàng khi cần */
+  justify-content: flex-start; /* Căn giữa các mục */
 }
 
 .socials ul li {
-  display: flex; /* Tạo nhóm cho biểu tượng và chữ */
-  align-items: center; /* Canh giữa biểu tượng và chữ theo chiều dọc */
-  margin-right: 20px; /* Khoảng cách giữa các mục */
+  display: flex;
+  align-items: center;
+  margin: 10px; /* Khoảng cách giữa các mục */
 }
 
 .socials ul li a {
   display: flex;
   align-items: center;
-  text-decoration: none; /* Bỏ gạch chân liên kết */
+  text-decoration: none;
 }
 
 .socials ul li span.ico-circle {
@@ -1297,23 +1304,23 @@ footer .credits a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #f0f0f0; /* Màu nền của vòng tròn */
-  color: #333; /* Màu biểu tượng */
+  background-color: #f0f0f0;
+  color: #333;
   font-size: 20px;
-  margin-right: 10px; /* Khoảng cách giữa biểu tượng và chữ */
+  margin-right: 10px;
 }
 
 .socials ul li b {
-  font-size: 16px; /* Kích thước chữ */
-  color: #333; /* Màu chữ */
-  font-weight: normal; /* Đặt lại font weight nếu không muốn chữ đậm */
+  font-size: 16px;
+  color: #333;
+  font-weight: normal;
 }
 
 .socials ul li:hover span.ico-circle {
-  background-color: #007bff; /* Màu nền khi hover */
-  color: #fff; /* Màu biểu tượng khi hover */
+  background-color: #007bff;
+  color: #fff;
 }
 
 .socials ul li:hover b {
-  color: #007bff; /* Màu chữ khi hover */
+  color: #007bff;
 }
